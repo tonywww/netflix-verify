@@ -50,6 +50,22 @@
    chmod +x nf
    ./nf
    ```
+3. Go 编译
+
+   * Linux平台上编译Linux amd 64位:
+   ```shell
+   CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build main.go
+   `````
+
+   * Linux平台上编译Linux arm 64位:
+   ```shell
+   CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build main.go
+   `````
+
+   * Linux平台上编译Windows 64位:
+   ```shell
+   CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build main.go
+   `````
 
 ## 效果演示图
 
@@ -96,16 +112,6 @@
 在观看Netflix影片，有一种情况极少遇到，那就是“**半解锁**”，可以观看一部分的非自制剧，却不会显示任何地域排行榜有关的信息。
 
 这种情况由于太少见以至于**很容易被忽略**，我会在未来认真研究它，以推出更健壮的检测脚本。如果您手里有可以半解锁Netflix的机器，欢迎联系我测试，我会将您的名字加入鸣谢名单中，非常感谢。
-
-## 推荐使用以下SSH客户端以获得良好的使用体验
-
-NextSSH：[NextSSH.APP](https://nextssh.app)
-
-> 如果你是Termius的粉丝，那么它绝对是你的菜。颜值功能集于一身的强大SSH客户端，同时也是macOS用户的最爱，没有之一。
-
-Electerm：[Github Source](https://github.com/electerm/electerm)
-
-> 目前最好的开源SSH客户端，想要的功能一样不少，对安全隐私有较高要求的用户首选。
 
 ## 其他常见流媒体脚本链接
 
